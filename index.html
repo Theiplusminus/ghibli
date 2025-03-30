@@ -49,23 +49,68 @@
         .contest-btn:hover {
             background-color: #c0392b;
         }
+        .winners-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .winner-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .winner-row img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .winner-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .instagram-link {
+            font-size: 18px;
+            text-decoration: none;
+            color: #e1306c;
+        }
+        .prize-amount {
+            font-size: 20px;
+            font-weight: bold;
+            color: #27ae60;
+        }
     </style>
 </head>
 <body>
     <h1>Ghibli Image Contest</h1>
     <p>Showcase your Ghibli-style art and participate in the contest!</p>
     <div class="gallery">
-        <img src="signal-2025-03-30-095207.png" alt="Ghibli Art">
-        <img src="signal-2025-03-30-095207_002.png" alt="Ghibli Inspired">
-        <img src="signal-2025-03-30-095207_003.png" alt="Studio Ghibli Scene">
-        <img src="signal-2025-03-30-095207_004.png" alt="Fantasy Ghibli Art">
-        <img src="signal-2025-03-30-095207_005.png" alt="Ghibli Movie Art">
-        <img src="signal-2025-03-30-095207_008.png" alt="Ghibli Castle">
-        <img src="signal-2025-03-30-095207_006.png" alt="Totoro Ghibli Art">
-        <img src="signal-2025-03-30-095207_007.png" alt="Ghibli Forest Scene">
-        <img src="signal-2025-03-30-095207_009.png" alt="Spirited Away Scene">
-        <img src="signal-2025-03-30-095207_010.png" alt="Watercolor Ghibli Art">
+        <img src="images/signal-2025-03-30-095207.png" alt="Ghibli Art">
+        <img src="images/signal-2025-03-30-095207_002.png" alt="Ghibli Inspired">
+        <img src="images/signal-2025-03-30-095207_003.png" alt="Studio Ghibli Scene">
+        <img src="images/signal-2025-03-30-095207_004.png" alt="Fantasy Ghibli Art">
+        <img src="images/signal-2025-03-30-095207_005.png" alt="Ghibli Movie Art">
+        <img src="images/signal-2025-03-30-095207_008.png" alt="Ghibli Castle">
+        <img src="images/signal-2025-03-30-095207_006.png" alt="Totoro Ghibli Art">
+        <img src="images/signal-2025-03-30-095207_007.png" alt="Ghibli Forest Scene">
+        <img src="images/signal-2025-03-30-095207_009.png" alt="Spirited Away Scene">
+        <img src="images/signal-2025-03-30-095207_010.png" alt="Watercolor Ghibli Art">
     </div>
     <a href="https://forms.gle/GZQbnTqCCJs1jCNRA" class="contest-btn">Participate in the Contest</a>
+    
+    <div class="winners-section">
+        <h2>Our Winners</h2>
+        <div class="winner-row">
+            <img src="images/winner1.png" alt="Winner Image">
+            <span class="winner-name">Winner Name</span>
+            <a href="https://instagram.com/username" class="instagram-link" target="_blank">📷 Instagram</a>
+            <span class="prize-amount">₹ Prize Amount</span>
+        </div>
+    </div>
 </body>
 </html>
