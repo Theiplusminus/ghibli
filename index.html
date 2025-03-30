@@ -68,17 +68,30 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .winner-row {
+  .winner-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allows elements to wrap in smaller screens */
-    gap: 10px;
-    padding: 10px;
+    justify-content: start;
+    gap: 15px;
+    padding: 15px;
     border-bottom: 1px solid #ddd;
-    max-width: 90%; /* Ensures it doesn’t overflow */
-    margin: auto; /* Centers the row */
+    max-width: 90%;
+    margin: auto;
 }
+        .winner-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.winner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+        
         .winner-row img {
     width: 60px; /* Adjusted size for mobile */
     height: 60px;
@@ -88,25 +101,25 @@
        .winner-name {
     font-size: 16px;
     font-weight: bold;
-    flex-grow: 1; /* Allows text to use available space */
-    text-align: center;
 }
 
-       .instagram-link {
-    font-size: 16px;
-    text-decoration: none;
-    color: #e1306c;
-    flex-shrink: 0; /* Prevents Instagram link from shrinking */
+.instagram-link img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
 }
-        .prize-amount {
+
+.instagram-link img:hover {
+    transform: scale(1.2);
+}
+       .prize-amount {
     font-size: 18px;
     font-weight: bold;
     color: #27ae60;
     background-color: #f0f0f0;
     padding: 5px 10px;
     border-radius: 5px;
-    white-space: nowrap; /* Prevents line breaks */
-    flex-shrink: 0; /* Prevents shrinking */
+    white-space: nowrap;
 }
         .instagram-link i {
     font-size: 24px;
@@ -152,8 +165,9 @@
         <img src="signal-2025-03-30-095207_010.png" alt="Watercolor Ghibli Art">
     </div>
     <a href="https://forms.gle/GZQbnTqCCJs1jCNRA" class="contest-btn">Participate in the Contest</a>
+
     
-    <div class="winners-section">
+<!--     <div class="winners-section">
         <h2>Our Winners</h2>
         <div class="winner-row">
             <img src="winner1.png" alt="Winner Image">
@@ -163,6 +177,22 @@
             <span class="winner-name">Akshaya</span>
             <span class="prize-amount">₹ 1200</span>
         </div>
+    </div> -->
+
+    <div class="winners-section">
+    <h2>Our Winners</h2>
+    <div class="winner-row">
+        <img src="winner1.png" alt="Winner Image" class="winner-image">
+        <div class="winner-info">
+            <span class="winner-name">Akshaya</span>
+            <a href="https://www.instagram.com/p/DHyct0hSs8o/?utm_source=ig_web_copy_link" class="instagram-link" target="_blank">
+                <img src="icons8-instagram.svg" alt="Instagram" width="24" height="24">
+            </a>
+            <span class="prize-amount">₹ 1200</span>
+        </div>
     </div>
+</div>
+
+    
 </body>
 </html>
